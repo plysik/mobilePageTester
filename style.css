@@ -1,0 +1,134 @@
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c1966+0,6f367f+100 */
+    background: rgb(76, 25, 102);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(76, 25, 102, 1) 0%, rgba(111, 54, 127, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(76, 25, 102, 1) 0%, rgba(111, 54, 127, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(76, 25, 102, 1) 0%, rgba(111, 54, 127, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c1966', endColorstr='#6f367f', GradientType=0);
+    /* IE6-9 */
+    /*    background-color: #4c1966; */
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.float-panel {
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(999, 999, 999, 0.7);
+    cursor: move;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 2;
+    border: 7px solid rgba(97, 97, 97, 0.7);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    -webkit-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.5);
+}
+
+.float-panel a {
+    padding: 0 10px;
+    line-height: 34px;
+    color: white;
+}
+
+input[type='button'] {
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    color: white;
+    font-weight: bold;
+}
+
+input[type='button'],
+.float-panel a {
+    font-family: Arial;
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6a400+75,ffcd70+100 */
+    background: rgb(246, 164, 0);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(246, 164, 0, 1) 75%, rgba(255, 205, 112, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(246, 164, 0, 1) 75%, rgba(255, 205, 112, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(246, 164, 0, 1) 75%, rgba(255, 205, 112, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a400', endColorstr='#ffcd70', GradientType=0);
+    /* IE6-9 */
+    background-position: center 60px;
+    background-size: 300%;
+}
+
+input[type='button']:hover,
+.float-panel a:hover {
+    background-position: center 33px;
+    -webkit-transition: background-position .4s ease;
+    -ms-transition: background-position .4s ease;
+    transition: background-position .4s ease;
+}
+
+.drag-cover {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #f6a400;
+    z-index: 1;
+    opacity: 0.2;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    display: none;
+}
+
+.drag-cover.drag {
+    display: block;
+}
+
+iframe {
+    width: 320px;
+    min-width: 320px;
+    max-width: 100%;
+    height: 100vh;
+    margin: auto;
+    display: block;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 19px 6px rgba(0, 0, 0, 0.75);
+    transition: width .7s ease;
+}
+
+.drag-cover.drag+iframe {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
